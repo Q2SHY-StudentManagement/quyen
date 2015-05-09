@@ -76,7 +76,7 @@
     <body>
         <script type="text/javascript" src="http://webquangnam.com/jsShare/tuyetroi.js"></script>
         <div id="header2">  
-            <left><a href="Home.jsp"><img width="414" height="143" src="anh/logo.jpg"></a></left>                             
+            <a href="Home.jsp"><img width="414" height="143" src="anh/logo.jpg"></a>                             
         </div>
 
         <div id="header3">                
