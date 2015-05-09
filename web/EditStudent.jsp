@@ -22,7 +22,7 @@
             }
             #nav {
                 line-height:30px;
-                background-color: #c43735;
+                background-color: #cccccc;
                 height:1000px;
                 width:auto;
                 float:right;
@@ -30,7 +30,7 @@
             }
             #nav2 {
                 line-height:30px;
-                background-color: #c43735;
+                background-color: #cccccc;
                 height:1000px;
                 width:auto;
                 float:left;
@@ -60,38 +60,46 @@
             }           
 
             #header2 {
-                background-image:url("anh/3.jpg");
+                background-image:url("anh/6.jpg");
                 color:black;
                 text-align:left;
-                padding:55px;
+                padding:90px;
             }
             #header3 {
-                background-color:#C6E2FF;
-                color:white;
+                background-color:#BC3C2E;
+                color:#F5FFFA;
                 text-align:left;
-                padding:1px;
+                padding:7px;
             }
         </style>
     </head>
     <body>
         <script type="text/javascript" src="http://webquangnam.com/jsShare/tuyetroi.js"></script>
-        <div id="header2">  
-            <a href="Home.jsp"><img width="414" height="143" src="anh/logo.jpg"></a>                             
+        <div id="header2" style="float:bottom">  
+            
+            <a href="Home.jsp"><img  width="280" height="100" src="anh/logo.jpg"> 
+            
+                                  
         </div>
 
-        <div id="header3">                
-            <table border="1" id="01" style="width: 100%"">
+      <div id="header3">                
+            <table  id="01" style="width: 100%">
+                
                 <tr>
-                    <td style="text-align:left" ><p style="color: #8B4726"><a href='Home.jsp'><b>Home</b></a></td> 
-                    <td style="text-align:left" ><a href='AddStudent.jsp'><b>Add New Student</a></td>
-                    <td style="text-align:left" ><a href='showData.jsp'><b>Search Student</b></a></td>
-                    <td style="text-align:left" ><a href='About.jsp'><b>About</a></td>
-                    <td style="text-align:left" ><a href='Logout.jsp'><b>Logout</a></td>
+                    
+                    <td style="text-align:left" style="color: #8B4726"><li class="menusep"><a  href='Home.jsp'><b style="color: #ffffff">Home</b></a></li></td> 
+                    <td style="text-align:left" ><li class="menusep">&nbsp;<a href='AddStudent.jsp'><b  style="color: #ffffff">Add New Student</li></a></td>
+
+                    <td style="text-align:left" ><li class="menusep">&nbsp;<a href='showData.jsp'><b  style="color: #ffffff">Search Student</b></li></a></td>
+                    <td style="text-align:left" ><li class="menusep">&nbsp;<a href='About.jsp'><b  style="color: #ffffff">About</li></a></td>
+                    <td style="text-align:left" ><li class="menusep">&nbsp;<a href='Logout.jsp'><b  style="color: #ffffff">Logout</li></a></td>
 
                 </tr>       
 
-            </table>           
+            </table>   
+
         </div>
+        
         <jsp:useBean class="com.sample.StudentBean" id="da" scope="session"/>
 
         <form name="mform" action="EditStudent.jsp"> 
