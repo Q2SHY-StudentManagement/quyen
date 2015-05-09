@@ -160,8 +160,13 @@
                         <tr></tr>
                         <tr>
                             <td><p>Gender:</td>
-                            <td><input type="radio" name="1" value="female" checked="checked"/>Female
-                                <input type="radio" name="1" value="male" />Male</td>
+                            <%if(Gender.equals("Female")){%>
+                                <td><input type="radio" name="1" value="Female" checked="checked"/>Female
+                                <input type="radio" name="1" value="Male" />Male</td>
+                            <%}else{%>
+                                <td><input type="radio" name="1" value="Female" />Female
+                                <input type="radio" name="1" value="Male" checked="checked"/>Male</td>
+                            <%}%> 
                         </tr>
                         <tr></tr>
                         <tr>
